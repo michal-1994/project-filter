@@ -3,11 +3,11 @@
 ### STORE AGE EACH PERSON
 Create array with object to store data
 
-### CALCULATE AGE
-Function to return fit options
+### FILTER FIRST OPTION
+Filter with function which return fix elements
 
-### FILTER PERSON
-Filter fit person
+### FILTER SECOND OPTION
+Filter with forEach and if to return fix elements
 
-### CREATE TABLE WITH FIT ELEMENTS
-Create table with filtered elements
+### FILTER THIRD OPTION
+None

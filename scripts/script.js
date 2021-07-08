@@ -1,6 +1,6 @@
 $(function() {
     // STORE AGE EACH PERSON
-    var person = [
+    var persons = [
         {
             name: 'Tomasz',
             age: 22
@@ -19,24 +19,45 @@ $(function() {
         }
     ];
 
-    // CALCULATE AGE
-    function filterAge(person) {
-        return (person.age >= 18) && (person.age <=40);
+    // FILTER FIRST OPTION
+    function filterAge(persons) {
+        return (persons.age >= 18) && (persons.age <=40);
     }
 
-    // FILTER PERSON
     let results = [];
-    results = person.filter(filterAge);
-    let $tableBody = $('<tbody></tbody>');
+    results = persons.filter(filterAge);
+    let $tableBody1 = $('<tbody></tbody>');
 
-    // CREATE TABLE WITH FIT ELEMENTS
     for (let i = 0; i<results.length; i++) {
         let person = results[i];
         let $row = $('<tr></tr>');
         $row.append($('<td></td>').text(person.name));
         $row.append($('<td></td>').text(person.age));
-        $tableBody.append( $row );                     
+        $tableBody1.append( $row );                     
     }
 
-    $('#table-1 thead').after($tableBody);
+    $('#table-1 thead').after($tableBody1);
+
+    // FILTER SECOND OPTION
+    results = [];
+    persons.forEach(function(person) {
+        if(person.age >= 18 && person.age <=40) {
+            results.push(person);
+        }
+    });
+
+    let $tableBody2 = $('<tbody></tbody>');
+
+    for (let i = 0; i<results.length; i++) {
+        let person = results[i];
+        let $row = $('<tr></tr>');
+        $row.append($('<td></td>').text(person.name));
+        $row.append($('<td></td>').text(person.age));
+        $tableBody2.append( $row );                     
+    }
+
+    $('#table-2 thead').after($tableBody2);
+
+    // FILTER THIRD OPTION
+    
 });
