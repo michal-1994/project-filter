@@ -1,0 +1,51 @@
+// Variables 
+@color-light: #fff;
+@color-dark: #000;
+@color-primary: #2ecc71;
+@color-gray: #2c3e50;
+
+// Global 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: @color-gray;
+    line-height: 1.7;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: @color-light;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.workspace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+p, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    opacity: .8;
+    color: @color-light;
+}
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 32px;
+    color: @color-primary;
+    font-weight: 700;
+}
+
+// Yout style
