@@ -8,6 +8,7 @@
     <title>Project-filter</title>
 
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -30,10 +31,23 @@
                     <td>Age</td>
                 </thead>
             </table>
+            <!-- Table 3 -->
+            <div id="ages-range">
+                Min: <input type="text" id="value-min" />
+                Max: <input type="text" id="value-max" />
+                <div id="slider"></div>
+                <table id="table-3">
+                    <thead>
+                        <td>Name</td>
+                        <td>Age</td>
+                    </thead>
+                </table>              
+            </div>
         </div>
     </div>
     
     <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <script src="./scripts/jquery.nouislider.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
 </html>

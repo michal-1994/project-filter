@@ -8,3 +8,6 @@ Filter with function which return fix elements
 
 ### FILTER SECOND OPTION
 Filter with forEach and if to return fix elements
+
+### FILTER THIRD OPTION
+Filter dynamic with jQuery noUiSlider function

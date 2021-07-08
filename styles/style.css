@@ -45,6 +45,7 @@ h1 {
 }
 table {
   margin-bottom: 25px;
+  width: 100%;
 }
 table td {
   min-width: 100px;
@@ -53,4 +54,15 @@ table td {
 }
 table thead td {
   background-color: #2ecc71;
+}
+#ages-range {
+  width: 100%;
+}
+input {
+  margin-bottom: 25px;
+  padding: 4px 8px;
+  width: 100%;
+}
+#slider {
+  margin-bottom: 25px;
 }
