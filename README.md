@@ -1,7 +1,13 @@
 ### FILTER
 
-### FIRST OPTION
-Describe
+### STORE AGE EACH PERSON
+Create array with object to store data
 
-### SECOND OPTION
-Describe
+### CALCULATE AGE
+Function to return fit options
+
+### FILTER PERSON
+Filter fit person
+
+### CREATE TABLE WITH FIT ELEMENTS
+Create table with filtered elements

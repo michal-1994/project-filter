@@ -41,3 +41,14 @@ h1 {
   color: #2ecc71;
   font-weight: 700;
 }
+table {
+  margin-bottom: 25px;
+}
+table td {
+  min-width: 100px;
+  border: 1px solid #2ecc71;
+  padding: 10px;
+}
+table thead td {
+  background-color: #2ecc71;
+}
