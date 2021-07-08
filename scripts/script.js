@@ -41,7 +41,7 @@ $(function() {
     // FILTER SECOND OPTION
     results = [];
     persons.forEach(function(person) {
-        if(person.age >= 18 && person.age <=40) {
+        if(person.age >= 18 && person.age <=41) {
             results.push(person);
         }
     });
@@ -57,7 +57,4 @@ $(function() {
     }
 
     $('#table-2 thead').after($tableBody2);
-
-    // FILTER THIRD OPTION
-    
 });
